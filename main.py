@@ -8,8 +8,8 @@ num_pix = 17
 crickit.init_neopixel(num_pix, bpp=4, pixel_order=ORDER)
 np = crickit.neopixel
 
-BLYNK_AUTH = 'ajq967lHRoPNlPZZObQ_mcWo2N8XyTHc'
-blynk = blynklib.Blynk(BLYNK_AUTH, server='192.168.1.141', port=8080)
+BLYNK_AUTH = 'API_KEY_HERE'
+blynk = blynklib.Blynk(BLYNK_AUTH, server='SERVER_ADDR_HERE', port=8080)
 
 @blynk.handle_event('write V0')
 def animate_pix1(pin, value):
